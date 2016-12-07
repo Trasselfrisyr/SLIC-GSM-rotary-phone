@@ -11,15 +11,13 @@ Main functions:
 
 Known issues:
 
-- The SIM900/800 has got differential connections for mic and speaker making it less good for connecting directly to the SLIC board or to receivers with common ground (three wires instead of four). I will try using an A6 board later on to see if that makes things easier, as they have a secondary headset connection with common ground.
-
-- Hard to get rid of GSM interference in audio.
+- Hard to get rid of GSM interference in audio if reciever audio is routed via the SLIC module. For clean audio, connect the reciever directly to MIC+ (tip of MIC jack connector), SPK+ (tip of SPK jack connector) and GND (pin connector, not from negative pins of jack connectors). If the handset has got separate wires for negative on mic and speaker, you can use the differential negative connections from the jacks. 
 
 Connections to rotary phone:
 
-- If you can get a good audio connection between GSM board and SLIC, you only need to hook up the ring/tip wires to the SLIC. It provides a phone line connection.
+- Hook up the ring/tip wires to the ring/tip pins of the SLIC module. It provides a local phone line connection.
 
-- If you are having troubles with audio, try connecting the phone receiver wires directly to the GSM board instead.
+- For best audio, connect the phone receiver wires directly to the GSM board.
 
 
 For the SIM900 library I’ve been using the Itead one, but there are a bunch out there that will work.
