@@ -28,3 +28,21 @@ https://github.com/itead/ITEADLIB_Arduino_SIMCom
 Schematic for the connections available in the slic-gsm-rotary-schematic.png file. 
 
 Make sure PIN is disabled on your SIM card, or stuff won’t work.
+
+
+BOM:
+
+- Arduino Pro Micro Atmega328
+- QCX601 SLIC module
+- SIM800 or SIM900 series GSM module w. mic and speaker breakouts
+- Li-Ion charger board with separate power out
+- Li-Ion battery 3.7V, 18650
+- Battery holder for 18650
+- Slide switch DPDT
+- 3.5mm barrel jack female (for charger)
+- 3.5mm barrel plug male to USB A (for charging)
+- Phone charger, USB
+- Connection wires, with and without Dupont connectors (AWG24 for power connections)
+- Capacitor, electrolyte, 470uF 16V
+- Capacitor, ceramic, 100nF 50V
+- 3.5mm TRS male x2 (if your GSM board has got jacks)
