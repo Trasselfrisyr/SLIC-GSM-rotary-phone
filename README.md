@@ -30,9 +30,10 @@ Schematic for the connections available in the slic-gsm-rotary-schematic.png fil
 Make sure PIN is disabled on your SIM card, or stuff won’t work.
 
 
-BOM:
+Bill of materials:
 
-- Arduino Pro Micro Atmega328
+- Vintage rotary phone in working condition
+- Arduino Pro Mini Atmega328
 - QCX601 SLIC module
 - SIM800 or SIM900 series GSM module w. mic and speaker breakouts
 - Li-Ion charger board with separate power out
@@ -46,3 +47,11 @@ BOM:
 - Capacitor, electrolyte, 470uF 16V
 - Capacitor, ceramic, 100nF 50V
 - 3.5mm TRS male x2 (if your GSM board has got jacks)
+- Perf board for mounting the components
+- Socket, 24 pin wide DIP, for Pro Mini (makes it easier to replace or re-program)
+- FTDI programmer (USB to TTL serial converter)
+
+Required tools:
+
+- Soldering equipment (for electronics)
+- Computer with Arduino Software (IDE)
