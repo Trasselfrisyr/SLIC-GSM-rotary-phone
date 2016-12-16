@@ -21,9 +21,9 @@ Connections to rotary phone:
 - For best audio, connect the phone receiver wires directly to the GSM board.
 
 
-For the SIM900 library I’ve been using the Itead one, but there are a bunch out there that will work.
+For the SIM900 library I’ve been using the one by Marco Martines.
 
-https://github.com/itead/ITEADLIB_Arduino_SIMCom
+https://github.com/MarcoMartines/GSM-GPRS-GPS-Shield
 
 Schematic for the connections available in the slic-gsm-rotary-schematic.png file. 
 
