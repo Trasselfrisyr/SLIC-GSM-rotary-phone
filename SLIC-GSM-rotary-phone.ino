@@ -156,6 +156,12 @@ void loop() {
       Serial.println("Incoming call. Ringing.");
       state = RINGING;
     }
+    if (gsmStatus == CALL_ACTIVE_VOICE) {
+      // this should not happen
+      // hanging up must have failed, try again
+      call.HangUp();
+      delay(2000); 
+    }
     #endif
     #if defined(SLIC_TEST)
     if (ringTest) {
@@ -234,6 +240,7 @@ void loop() {
       call.HangUp();
       #endif
       flushNumber();
+      delay(1000); // wait a sec before going to next state to make sure GSM module keeps up
       state = IDLE_WAIT;
     }
     #if defined(GSM_MODULE)
@@ -290,6 +297,7 @@ void loop() {
       #if defined(GSM_MODULE)
       call.Call(numArray);
       #endif
+      delay(1000); // wait a sec before going to next state to make sure GSM module keeps up
       state = ACTIVE_CALL;
     }
     if ((shkState == LOW) && (unsigned long)(currentMillis - lastShkFall) > tHup) {
